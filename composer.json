@@ -1,0 +1,14 @@
+{
+    "name": "hongyu/frame",
+    "description": "dd",
+    "type": "NO",
+    "license": "NO",
+    "authors": [
+        {
+            "name": "hongyu",
+            "email": "455716361@qq.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {}
+}
