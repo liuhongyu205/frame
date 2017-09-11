@@ -1,14 +1,25 @@
 {
-    "name": "hongyu/frame",
-    "description": "dd",
-    "type": "NO",
-    "license": "NO",
+    "name": "chaorenwubin/c86frame",
+    "description": "后盾网c86框架",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
-            "name": "hongyu",
-            "email": "455716361@qq.com"
+            "name": "武斌",
+            "email": "wubin.mail@foxmail.com"
         }
     ],
-    "minimum-stability": "RC",
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.1"
+    },
+    "autoload":{
+        "files":[
+            "system/helper.php"
+        ],
+        "psr-4":{
+            "houdunwang\\":"houdunwang\\",
+            "app\\":"app\\",
+            "system\\":"system\\"
+        }
+    }
 }

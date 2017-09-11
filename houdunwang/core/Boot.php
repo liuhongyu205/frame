@@ -16,6 +16,8 @@ class Boot
 //       2执行应用
 //       /s=home/entry/add
        self::appRun();
+//       3.运行异常抛出
+       self::handler();
    }
 //   初始化框架函数
     public static function init()
@@ -62,6 +64,13 @@ class Boot
             echo call_user_func_array([new $class,$action],[]);
 
 
+
+    }
+//    抛出异常函数
+    private static function handler(){
+        $whoops=new \Whoops\Run;
+        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        $whoops->register();
 
     }
 

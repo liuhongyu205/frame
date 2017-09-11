@@ -12,6 +12,7 @@ class Base
     {
         extract($this->data);
         include $this->file;
+//        返回字符串 否则会报错
         return '';
     }
     public function with($var){

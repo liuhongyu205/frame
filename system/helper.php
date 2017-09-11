@@ -10,7 +10,7 @@ date_default_timezone_set('PRC');
 /**
  * 定义常量判断是否为post请求
  */
-define ('IS_POST',$_SERVER['REQUEST_METHOD']=='POST'?true:false);
+//define ('IS_POST',$_SERVER['REQUEST_METHOD']=='POST'?true:false);
 
 if(!function_exists ('dd')){
 	/**
@@ -29,12 +29,12 @@ if(!function_exists ('dd')){
 		}
 		echo '</pre>';
 	}
-}
     function c ($path)
     {
         $info =explode('.',$path);
-        $config =include "../system/config/". $info[0].'.php';
+        $config =include "../system/config/". $info[0].".php";
         return isset($config[$info[1]])? $config[$info[1]]:null;
-
     }
+}
+
 
